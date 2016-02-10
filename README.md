@@ -32,3 +32,5 @@ Now, we first need to calculate *d\_min*. The periodic unit cell is defined by t
 <img src="Image-2.png" width="460" align="middle">
 
 where *n\_1* is the normal vector to the plane defined by vector 2 and 3, *d\_1* is the distance from point 1 to the plane defined by vector 2 and 3, etc.
+
+The size of the supercell is then (2n+1) by (2n+1) by (2n+1).
