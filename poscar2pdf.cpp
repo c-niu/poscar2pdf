@@ -1,10 +1,9 @@
 //
-//  main.cpp
-//  poscar2pdf
-//
+//  poscar2pdf.cpp
+//  
 //  Created by Changning Niu on 2/9/16.
 //  Copyright © 2016 Changning Niu. All rights reserved.
-//
+//  For more information, go to https://github.com/changning/poscar2pdf
 
 #include <iostream>
 #include <fstream>
