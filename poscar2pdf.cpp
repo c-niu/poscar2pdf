@@ -1,10 +1,10 @@
 //
-//  poscar2pdf.cpp
-//  
+//  main.cpp
+//  poscar2pdf
 //
 //  Created by Changning Niu on 2/9/16.
 //  Copyright © 2016 Changning Niu. All rights reserved.
-//  For more information, go to https://github.com/changning/poscar2pdf
+//
 
 #include <iostream>
 #include <fstream>
@@ -215,8 +215,8 @@ int main(int argc, char* argv[]) {
     // If (dMax - dMin) / dStep is not integer, decrease dMax slightly
     nData = (int)((dMax - dMin) / dStep) + 1;
     dMax = (nData - 1) * dStep + dMin;
-    dMin2 = dMin * dMin;
-    dMax2 = dMax * dMax;
+    dMin2 = dMin * dMin / dLatConst / dLatConst;
+    dMax2 = dMax * dMax / dLatConst / dLatConst;
     if (nData > 10000) {
         cout << "Number of PDF data points exceeds 10000. Change the code.\n";
         exit(1);
