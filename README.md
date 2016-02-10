@@ -24,11 +24,11 @@ POSCAR only contains a single periodic unit that represents the entire bulk mate
 
 A 3-3-3 supercell has the original periodic unit cell in the center and eight cells surrounding it. The maximum range of the PDF is the radius of the largest sphere inside the supercell whose spherical center is anywhere in the periodic unit cell in the center. Therefore, this radius equals the smallest distance between any two opposite sides of the periodic unit cell. This is only true for the 3-3-3 supercell. If the desired maximum range of PDF is larger than this radius, a supercell larger than 3-3-3 is needed. Let’s put it this way:
 
-![](Image-1.png)
+![](Image-1.png =300px)
 
 where *r\_max* is the maximum range of the desired PDF, *n* is the thickness of periodic unit cell surrounding the one in the center, and *d\_min* is the smallest distance between any two opposite sides of the periodic unit cell.
 Now, we first need to calculate *d\_min*. The periodic unit cell is defined by three vectors, or three points plus the origin. The distance between two opposite sides equals the distance from one point to the plane defined by the other two points and the origin. This is a well-defined math problem. Let’s skip to the answers:
 
-![](Image-2.png)
+![](Image-2.png =600px)
 
 where *n\_1* is the normal vector to the plane defined by vector 2 and 3, *d\_1* is the distance from point 1 to the plane defined by vector 2 and 3, etc.
