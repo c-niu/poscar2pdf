@@ -5,9 +5,6 @@ This code calculates the pair distribution function (PDF) from a POSCAR.
 2. Run the code: `poscar2pdf POSCAR 0.1 0.05 5.0` (where 0.1 and 5.0 set the range of radius, and 0.05 is the size of steps).
 3. Plot PDF using whatever visualization software you like with the data file `PDF_POSCAR.txt`. The first row has the titles of each column, which from left to right are the radius, PDFs of pair of elements, and total PDF.
 
-_A small tip_
-
-I find using a gnuplot script to plot the PDF is convenient, especially when I need to tune the size of steps to get a better looking PDF figure. In this case, all I need to do is change one variable in a bash script and re-run this script to get the .EPS file. An example is provided in the subdirectory `gnuplot`.
 ## Maths In The Code
 ### How to calculate the PDF
 To calculate the PDF, or g(r), the following is done by the code:
