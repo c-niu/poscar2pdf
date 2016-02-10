@@ -2,7 +2,7 @@
 This code calculates the pair distribution function (PDF) from a POSCAR.
 ## Installation and Usage
 1. Compile the c++ code: `c++ poscar2pdf.cpp -o poscar2pdf`
-2. Run the code: `poscar2pdf POSCAR 0.1 0.05 5.0` (where 0.1 and 5.0 set the range of radius, and 0.05 is the size of steps).
+2. Run the code: `poscar2pdf POSCAR 2.5 0.1 6.0` (where 2.5 and 6.0 set the range of radius, and 0.1 is the size of steps).
 3. Plot PDF using whatever visualization software you like with the data file `PDF_POSCAR.txt`. The first row has the titles of each column, which from left to right are the radius, PDFs of pair of elements, and total PDF.
 
 ## Maths In The Code
