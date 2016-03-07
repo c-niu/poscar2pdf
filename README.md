@@ -1,5 +1,8 @@
 # poscar2pdf
 This code calculates the pair distribution function (PDF) from a POSCAR.
+
+*This code works fine on my Mac. It seems something is wrong if it's run on Linux.*
+
 ## Installation and Usage
 1. Compile the c++ code: `c++ poscar2pdf.cpp -o poscar2pdf`
 2. Run the code: `poscar2pdf POSCAR 2.5 0.1 6.0` (where 2.5 and 6.0 set the range of radius, and 0.1 is the size of steps).
